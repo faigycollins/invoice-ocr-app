@@ -5,3 +5,16 @@ npm install tesseract.js
     // Handle the extracted data
   }} 
 />
+{
+  invoiceNumber: "INV-123",
+  date: "2025-01-22",
+  amount: 1234.56,
+  vendor: "Supplier Name",
+  // ... any additional fields
+}<InvoiceUploader 
+  apiEndpoint="/api/your-ocr-endpoint"
+  onProcessed={(data) => {
+    // Handle the extracted data
+    console.log('Processed invoice:', data);
+  }} 
+/>
